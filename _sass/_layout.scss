@@ -1,0 +1,7 @@
+.wrapper {
+  @extend .container;
+}
+
+header, section {
+  @extend .big-bottom-margin;
+}

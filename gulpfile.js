@@ -7,6 +7,7 @@ const gutil = require('gulp-util');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
+var spritesmith = require('gulp.spritesmith');
 
 const siteRoot = 'www';
 const cssFiles = '_sass/**/*.?(s)css';
@@ -18,6 +19,24 @@ gulp.task('css', () => {
     .pipe(cleancss())
     .pipe(concat('all.css'))
     .pipe(gulp.dest('www/css'));
+});
+
+gulp.task('sprite', () => {
+  var spriteData = gulp.src('images/src/*.png')
+    .pipe(spritesmith({
+      imgName: 'sprite.png',
+      imgPath: '../images/sprite.png?' + (new Date().getTime()),
+      retinaSrcFilter: 'images/src/*@2x.png',
+      retinaImgName: 'sprite-2x.png',
+      retinaImgPath: '../images/sprite-2x.png?' + (new Date().getTime()),
+      cssName: '_sprite.scss',
+    }));
+
+  var imgStream = spriteData.img
+    .pipe(gulp.dest('images/'));
+
+  var cssStream = spriteData.css
+    .pipe(gulp.dest('_sass'));
 });
 
 gulp.task('jekyll', () => {
