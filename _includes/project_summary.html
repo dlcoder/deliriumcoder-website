@@ -1,0 +1,15 @@
+<div class="section-content__sidebar">
+  <h3>Lo que hicimos</h3>
+  <ul class="dots">
+    {% for description in page.summary %}
+      <li>{{ description }}</li>
+    {% endfor %}
+  </ul>
+  <h3>Publicación</h3>
+  {% for date in page.dates %}
+    <p>{{ date }}</p>
+  {% endfor %}
+  {% if page.project-url %}
+    <a href="{{ page.project-url }}" target="_blank">Ver proyecto</a>
+  {% endif %}
+</div>
