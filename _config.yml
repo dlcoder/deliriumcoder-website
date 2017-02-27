@@ -21,4 +21,4 @@ collections:
     output: true
     permalink: /proyectos/:path/
 
-exclude: ['Gemfile.lock', 'Gemfile', 'config']
+exclude: ['Gemfile.lock', 'Gemfile', 'config', 'package.json', 'node_modules', 'gulpfile.js']

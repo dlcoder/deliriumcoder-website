@@ -1,0 +1,16 @@
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1200px
+);
+
+// Core variables and mixins
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/custom";
+
+// Reset and dependencies
+@import "../node_modules/bootstrap/scss/normalize";
+
+@import "../node_modules/bootstrap/scss/grid";
