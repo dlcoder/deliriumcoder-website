@@ -21,4 +21,7 @@ collections:
     output: true
     permalink: /proyectos/:path/
 
+sass:
+  sass_dir: _sass
+
 exclude: ['Gemfile.lock', 'Gemfile', 'config', 'package.json', 'node_modules', 'gulpfile.js']

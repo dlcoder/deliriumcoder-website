@@ -17,7 +17,7 @@ gulp.task('css', () => {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cleancss())
-    .pipe(concat('all.css'))
+    .pipe(concat('main.css'))
     .pipe(gulp.dest('www/css'));
 });
 

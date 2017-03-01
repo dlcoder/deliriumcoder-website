@@ -16,5 +16,8 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6"
+  },
+  "scripts": {
+    "vendors": "rm -rf vendor/bootstrap/ && mkdir vendor/bootstrap && cp -R node_modules/bootstrap/scss vendor/bootstrap/ && cp -R node_modules/bootstrap/dist vendor/bootstrap/"
   }
 }
