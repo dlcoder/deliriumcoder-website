@@ -56,6 +56,14 @@
 
 .site-logo {
   @extend .text-hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media-breakpoint-up(md) {
+    left: 0;
+    transform: none;
+  }
 }
 
 .site-name {
