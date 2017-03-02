@@ -1,0 +1,117 @@
+.highlight {
+  @extend .mini-bottom-margin;
+}
+
+.section-clients {
+  text-align: center;
+}
+
+.section-clients__logos {
+  @extend .big-bottom-margin;
+
+  list-style: none;
+  li {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0 2rem 0 0;
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.section-presentation__main {
+  @extend .col-sm-12;
+  @extend .col-md-6;
+}
+
+.section-team {
+  @extend .big-padding;
+
+  background: $color-blue-dark;
+  color: white;
+}
+
+.section-team__member {
+  @extend .col-sm-6;
+  @extend .col-md-6;
+  @extend .col-lg-3;
+
+  margin-bottom: 2.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover, &:active, &:focus {
+      color: white;
+    }
+  }
+
+  img {
+    @extend .mini-bottom-margin;
+
+    border-radius: 50%;
+  }
+
+  h3, p {
+    margin-bottom: 1rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+    &:nth-child(1), &:nth-child(2) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+    a {
+      font-size: $font-size-headline-6;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    a {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+.section-title {
+  @extend .big-bottom-margin;
+}
+
+.tecnologies {
+  @extend .default-margin;
+}
+
+.tecnology {
+  @extend .col-sm-6;
+  text-align: center;
+}
+
+.tecnology_drupal {
+  margin-bottom: 2rem;
+  img {
+    padding-top: .4rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}

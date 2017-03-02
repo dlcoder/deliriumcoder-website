@@ -1,7 +1,12 @@
+header, section {
+  @extend .big-bottom-margin;
+}
+
 .wrapper {
   @extend .container;
 }
 
-header, section {
-  @extend .big-bottom-margin;
+.section__inner {
+  @extend .row;
 }
+

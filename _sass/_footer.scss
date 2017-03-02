@@ -49,9 +49,18 @@
 }
 
 .contact-info {
-    @extend .col-md-7;
+  @extend .col-md-7;
+
   @include media-breakpoint-up(md) {
     text-align: right;
+    p {
+      display: inline-block;
+    }
   }
 }
 
+.vertical-separator {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

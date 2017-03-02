@@ -33,6 +33,10 @@
   }
 
   @include media-breakpoint-up(lg) {
+    min-height: 80vh;
+  }
+
+  @include media-breakpoint-up(xl) {
     height: 95vh;
   }
 }

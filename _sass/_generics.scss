@@ -13,6 +13,58 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style: none;
+  margin-bottom: .5rem;
+  padding-left: 1.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  padding: 0;
+  &.quotes {
+    li {
+      position: relative;
+      &:before {
+        color: $color-red;
+        content: "»";
+        display: block;
+        left: 0;
+        position: absolute;
+        top: -.1rem;
+      }
+    }
+  }
+}
+
+.button {
+  border: none;
+  background: $color-red;
+  color: white;
+  display: block;
+  font-size: $font-size-headline-3;
+  font-weight: $bold;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    background: darken($color-red, 15%);
+    color: white;
+    text-decoration: none;
+  }
+  @include media-breakpoint-up(sm) {
+    display: inline-block;
+  }
+}
+
 .big-bottom-margin {
   margin-bottom: 3rem; //48px
   @include media-breakpoint-up(md) {
@@ -33,6 +85,16 @@ img {
   }
 }
 
+.default-margin {
+  margin: 1.5rem 0; //24px
+  @include media-breakpoint-up(md) {
+    margin: 2rem 0; //32px
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 2.5rem 0; //40px
+  }
+}
+
 .default-bottom-margin {
   margin-bottom: 1.5rem; //24px
   @include media-breakpoint-up(md) {
@@ -40,6 +102,25 @@ img {
   }
   @include media-breakpoint-up(lg) {
     margin-bottom: 2.5rem; //40px
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.list-without-spacing {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline {
+  @extend .list-without-spacing;
+
+  li {
+    display: inline-block;
+    list-style: none;
   }
 }
 
@@ -51,6 +132,24 @@ img {
   @include media-breakpoint-up(lg) {
     margin-bottom: 2rem; //32px
   }
+}
+
+.separator {
+  @extend .default-margin;
+  border: 0;
+  background: $color-blue-ultralight;
+  display: block;
+  height: 1px;
+}
+
+.separator_mobile {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-hidden {
