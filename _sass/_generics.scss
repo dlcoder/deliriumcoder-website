@@ -60,6 +60,9 @@ ul {
     color: white;
     text-decoration: none;
   }
+  &:visited {
+    color: white;
+  }
   @include media-breakpoint-up(sm) {
     display: inline-block;
   }

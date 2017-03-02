@@ -35,10 +35,6 @@
   @include media-breakpoint-up(lg) {
     min-height: 80vh;
   }
-
-  @include media-breakpoint-up(xl) {
-    height: 95vh;
-  }
 }
 
 .header-brand {
@@ -101,4 +97,16 @@
   font-weight: $light;
   line-height: $line-height-headers;
 
+}
+
+.project-link {
+  @extend .col-sm-12;
+
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover, &:active, &:visited, &:focus {
+      color: white;
+    }
+  }
 }

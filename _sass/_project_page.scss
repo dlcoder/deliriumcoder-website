@@ -1,0 +1,30 @@
+.screenshoot {
+  @extend .big-padding;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-content__image {
+  @extend .col-sm-12;
+
+  background: $color-blue-ultralight;
+  text-align: center;
+}
+
+.section-content__main {
+  @extend .col-sm-12;
+  @extend .col-md-7;
+  @extend .col-lg-8;
+}
+
+.section-content__main-project {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 2rem;
+  }
+}
+
+.section-content__sidebar {
+  @extend .col-sm-12;
+  @extend .col-md-5;
+  @extend .col-lg-4;
+}

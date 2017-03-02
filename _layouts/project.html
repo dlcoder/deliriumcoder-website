@@ -8,18 +8,6 @@
     {% include header.html %}
 
     <article class="page-content">
-      <header class="section-heading section-heading_projects">
-        <div class="wrapper">
-          <div class="section-heading__content">
-            <h1 class="black">{{ page.title }}</h1>
-            <h2>{{ page.long-description }}</h2>
-            {% if page.project-url and page.project-url-title %}
-              <a href="{{ page.project-url }}" target="_blank">{{ page.project-url-title }}</a>
-            {% endif %}
-          </div>
-        </div>
-      </header>
-
       {{ content }}
 
       <section class="section-content section-content-project">
@@ -30,13 +18,11 @@
         </div>
       </section>
 
-      <section class="navigation section-last">
+      <section class="section-write-us">
         <div class="wrapper">
-          <div class="section-content__main section-content__highlight">
-            <h1>¿Te gusta lo que ves? ¿Quieres que trabajemos juntos?</h1>
-            <a href="/contacto" class="button">Escríbenos.</a>
+          <h2>¿Te gusta lo que ves? ¿Quieres que trabajemos juntos?</h2>
+          <a href="/contacto" class="button">Escríbenos</a>
           </div>
-        </div>
       </section>
     </article>
 
