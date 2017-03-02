@@ -134,6 +134,14 @@ ul {
   }
 }
 
+.panel {
+  padding: 2rem;
+}
+
+.panel_grey {
+  background: $color-blue-ultralight;
+}
+
 .separator {
   @extend .default-margin;
   border: 0;
