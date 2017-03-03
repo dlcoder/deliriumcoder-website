@@ -88,6 +88,26 @@ ul {
   }
 }
 
+.big-padding-bottom {
+  padding-bottom: 3rem; //48px
+  @include media-breakpoint-up(md) {
+    padding-bottom: 4rem; //64px
+  }
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 6rem; //96px
+  }
+}
+
+.big-padding-top {
+  padding-top: 3rem; //48px
+  @include media-breakpoint-up(md) {
+    padding-top: 4rem; //64px
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 6rem; //96px
+  }
+}
+
 .default-margin {
   margin: 1.5rem 0; //24px
   @include media-breakpoint-up(md) {

@@ -1,7 +1,13 @@
 .screenshoot {
-  @extend .big-padding;
+  padding-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  &:first-child {
+    @extend .big-padding-top;
+  }
+  &:last-child {
+    @extend .big-padding-bottom;
+  }
 }
 
 .screenshoot--inline {
