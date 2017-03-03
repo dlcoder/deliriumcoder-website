@@ -4,6 +4,10 @@
   padding-right: 1rem;
 }
 
+.screenshoot--inline {
+  @extend .col-sm-4;
+}
+
 .section-content__image {
   @extend .col-sm-12;
 
