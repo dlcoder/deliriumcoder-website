@@ -71,6 +71,12 @@
     margin-bottom: 1rem;
   }
 
+  @include media-breakpoint-down(sm) {
+    img {
+      width: 80%;
+    }
+  }
+
   @include media-breakpoint-up(md) {
     margin-bottom: 0;
     &:nth-child(1), &:nth-child(2) {

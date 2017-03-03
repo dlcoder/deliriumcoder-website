@@ -48,22 +48,17 @@
 
 .nav-link {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 1rem;
   &:last-child {
     margin-right: 0;
+  }
+  @include media-breakpoint-up(md) {
+    margin-right: 2rem;
   }
 }
 
 .site-logo {
   @extend .text-hidden;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-
-  @include media-breakpoint-up(md) {
-    left: 0;
-    transform: none;
-  }
 }
 
 .site-name {
@@ -80,8 +75,6 @@
   @extend .col-sm-12;
   @extend .col-md-8;
   @extend .col-lg-9;
-
-  text-align: center;
 
   @include media-breakpoint-up(md) {
     text-align: right;
