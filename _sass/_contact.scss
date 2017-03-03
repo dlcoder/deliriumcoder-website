@@ -24,20 +24,25 @@
 
 .section-workspace__gallery {
   @extend .col-lg-4;
-  @extend .col-xl-3;
   img {
     margin-bottom: 2rem;
     &:last-child {
       margin-bottom: 0;
     }
   }
+  @include media-breakpoint-up(lg) {
+    img {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .section-workspace__ofi {
   @extend .col-lg-8;
-  @extend .col-xl-9;
 
-  margin-bottom: 2rem;
+  img {
+    margin-bottom: 2rem;
+  }
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 0;
