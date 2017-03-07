@@ -23,8 +23,8 @@
 
 .section-content__main {
   @extend .col-sm-12;
-  @extend .col-md-7;
-  @extend .col-lg-8;
+  @extend .col-md-6;
+  @extend .col-lg-7;
 }
 
 .section-content__main-project {
@@ -35,6 +35,6 @@
 
 .section-content__sidebar {
   @extend .col-sm-12;
-  @extend .col-md-5;
-  @extend .col-lg-4;
+  @extend .col-md-6;
+  @extend .col-lg-5;
 }
