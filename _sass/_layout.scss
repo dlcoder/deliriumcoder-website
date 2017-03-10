@@ -6,7 +6,7 @@ header, section {
   @extend .container;
 }
 
-.section__inner {
+.section__inner, .quote__inner {
   @extend .row;
 }
 

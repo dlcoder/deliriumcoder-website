@@ -108,6 +108,10 @@ ul {
   }
 }
 
+.color-red {
+  color: $color-red;
+}
+
 .default-margin {
   margin: 1.5rem 0; //24px
   @include media-breakpoint-up(md) {
@@ -177,6 +181,10 @@ ul {
   @include media-breakpoint-up(md) {
     display: none;
   }
+}
+
+.small {
+  font-size: $font-size-headline-6;
 }
 
 .text-center {
