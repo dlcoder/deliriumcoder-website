@@ -4,18 +4,18 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.24.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^3.0.3",
+    "gulp-clean-css": "^3.9.3",
     "gulp-concat": "^2.6.1",
     "gulp-install": "^0.6.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^3.2.1",
     "gulp-util": "^3.0.8",
-    "gulp.spritesmith": "^6.3.0"
+    "gulp.spritesmith": "^6.9.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.1.0"
   },
   "scripts": {
     "vendors": "rm -rf vendor/bootstrap/ && mkdir vendor/bootstrap && cp -R node_modules/bootstrap/scss vendor/bootstrap/ && cp -R node_modules/bootstrap/dist vendor/bootstrap/"
