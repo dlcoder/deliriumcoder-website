@@ -2,3 +2,4 @@ www
 node_modules
 .sass-cache
 .jekyll-metadata
+.gems
