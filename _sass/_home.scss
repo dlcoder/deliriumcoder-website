@@ -44,6 +44,10 @@
   @extend .col-md-6;
 }
 
+.section__inner--team {
+  justify-content: center;
+}
+
 .section-team {
   @extend .big-padding;
 
@@ -52,10 +56,6 @@
 }
 
 .section-team__member {
-  @extend .col-sm-6;
-  @extend .col-md-6;
-  @extend .col-lg-3;
-
   margin-bottom: 2.5rem;
   &:last-child {
     margin-bottom: 0;
@@ -75,35 +75,63 @@
     @extend .mini-bottom-margin;
 
     border-radius: 50%;
+    width: 40%;
   }
 
   h3, p {
     margin-bottom: 1rem;
   }
 
-  @include media-breakpoint-down(md) {
+  p {
+    padding: 0 2.5rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    img {
+      width: 60%;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 22.5px;
+
+    a, p {
+      font-size: $font-size-headline-6;
+      padding: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    flex: 0 0 33%;
+    max-width: 33%;
+    padding: 0 22.5px;
+
+    margin-bottom: 0;
+    &:nth-child(1), &:nth-child(2) {
+      margin-bottom: 2.5rem;
+    }
+
     img {
       width: 80%;
     }
   }
 
-  @include media-breakpoint-up(md) {
-    margin-bottom: 0;
-    &:nth-child(1), &:nth-child(2) {
-      margin-bottom: 2.5rem;
-    }
-  }
-
   @include media-breakpoint-up(lg) {
     margin-bottom: 0;
-    a {
-      font-size: $font-size-headline-6;
+    a, p {
+      font-size: $font-size-base;
     }
   }
 
   @include media-breakpoint-up(xl) {
-    a {
-      font-size: $font-size-base;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 22.5px;
+
+    a, p {
+      font-size: $font-size-headline-6;
     }
   }
 }
