@@ -69,4 +69,4 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['css', 'jekyll', 'serve']);
+gulp.task('default', ['css', 'serve']);
